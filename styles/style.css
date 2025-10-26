@@ -171,6 +171,7 @@ ol {
   display: block;
   color: #fff;
   padding: 2px;
+  cursor: pointer;
 }
 
 .content__card-link:focus {
@@ -281,4 +282,15 @@ ol {
 .more-button {
   inline-size: 100%;
   block-size: 34px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner_visible {
+  display: block;
 }
