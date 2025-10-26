@@ -139,15 +139,7 @@ ol {
   flex-grow: 1;
   padding-inline-start: 10px;
 }
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
+
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -227,7 +219,15 @@ ol {
   overflow: hidden;
   color: #fff;
 }
-
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 .search-form__fieldset {
   border: none;
   flex-grow: 1;
