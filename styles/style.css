@@ -219,15 +219,7 @@ ol {
   overflow: hidden;
   color: #fff;
 }
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
+
 .search-form__fieldset {
   border: none;
   flex-grow: 1;
@@ -247,6 +239,40 @@ ol {
   align-items: center;
   gap: 5px;
   cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__pseudo-checkbox {
+  inline-size: 19px;
+  block-size: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: #fff;
+}
+
+.search-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .search-form__label-text {
