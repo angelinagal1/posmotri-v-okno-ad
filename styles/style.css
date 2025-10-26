@@ -14,18 +14,18 @@
   block-size: 534px;
 }
 
-.content__details {
+.result {
   grid-area: 1 / 1 / 3 / 2;
   display: flex;
   flex-direction: column;
   gap: 26px;
 }
 
-.content__list-container {
+.content__details {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.content__video-card-container {
+.content__list-container {
   grid-area: 2 / 2 / 3 / 3;
 }
 
