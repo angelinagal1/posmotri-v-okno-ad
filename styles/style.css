@@ -1,39 +1,62 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 133px 30px;
+  background-color: #1b1919;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-rows: auto 1fr;
+  gap: 30px;
+  inline-size: 1140px;
+  block-size: 534px;
+}
+
+.content__details {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
 .content__list {
   grid-column: 2;
   grid-row: 1 / -1;
   align-self: start;
-  background-color: #1b1919;
 }
 
-.content__card-link_current {
-  background-color: #545050;
+.content__list-container {
+  block-size: 298px;
+  overflow-y: auto;
+  position: relative;
 }
 
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Выравнивание карточек */
 .content__video-card {
   display: flex;
   align-items: start;
   margin-bottom: 30px;
-  padding: 2px;
 }
 
-.content__video-card:hover {
-  background-color: #545050;
-}
-
-.content__video-card:active {
-  background-color: #545050;
-}
-
-.result__video-container {
-  inline-size: 100%;
-  block-size: 386px;
-  background-color: #1b1919;
-  position: relative;
-}
-
-.result__video {
-  inline-size: 100%;
-  block-size: 100%;
+.content__video-card-thumbnail {
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+  padding-inline-start: 10px;
 }
