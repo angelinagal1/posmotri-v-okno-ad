@@ -70,6 +70,7 @@ ol {
   grid-row: 1 / -1;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 26px;
 }
 
@@ -167,6 +168,15 @@ ol {
   color: #fff;
 }
 
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
@@ -191,15 +201,7 @@ ol {
   overflow: hidden;
   color: #fff;
 }
-.visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
+
 .search-form__fieldset {
   border: none;
   flex-grow: 1;
