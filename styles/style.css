@@ -258,21 +258,31 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__pseudo-checkbox {
+.search-form__label-text {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-form__label-text::before {
+  content: "";
   inline-size: 19px;
   block-size: 19px;
   border: 1px solid #fff;
   background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: "";
-  inline-size: 15px;
-  block-size: 15px;
+.search-form__checkbox:checked + .search-form__label-text::before {
   background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Crect width='15' height='15' fill='%231b1919'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
 }
 
 .search-form__checkbox {
@@ -281,13 +291,6 @@ ol {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-}
-
-.search-form__label-text {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #fff;
 }
 
 .search-form__textfield {
